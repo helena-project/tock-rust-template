@@ -1,0 +1,15 @@
+[package]
+name = "tock-template"
+version = "0.0.0"
+authors = []
+
+[dependencies]
+tock = {path = "../libtock-rs"}
+
+[profile.dev]
+panic = "abort"
+lto = true
+
+[profile.release]
+panic = "abort"
+lto = true
