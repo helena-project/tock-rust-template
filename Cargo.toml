@@ -9,7 +9,9 @@ tock = {git = "https://github.com/helena-project/libtock-rs"}
 [profile.dev]
 panic = "abort"
 lto = true
+debug = true
 
 [profile.release]
 panic = "abort"
 lto = true
+debug = true
