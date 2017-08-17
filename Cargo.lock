@@ -21,7 +21,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "tock"
 version = "0.1.0"
-source = "git+https://github.com/helena-project/libtock-rs#cf0b157db906bc7e1415ce3aff4afd582dd9080a"
+source = "git+https://github.com/helena-project/libtock-rs#8e2b0df0d8b4bfaf22c16a0778ed3a3c06dd5345"
 dependencies = [
  "linked_list_allocator 0.4.1 (git+https://github.com/phil-opp/linked-list-allocator)",
 ]

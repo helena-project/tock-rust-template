@@ -28,11 +28,15 @@ XARGO ?= xargo
 .PHONY: all
 all: $(BUILDDIR)/$(PACKAGE_NAME).tab
 
+# Make can't reasonably find all dependencies (i.e. changhing Cargo.toml
+# requires a rebuild), just let xargo do it's job every time
+.PHONY: FORCE_XARGO
+
 .PHONY: clean
 clean:
 	$(Q)$(XARGO) clean $(VERBOSE)
 
-$(BUILDDIR)/$(PACKAGE_NAME): src/main.rs
+$(BUILDDIR)/$(PACKAGE_NAME): src/main.rs FORCE_XARGO
 	$(Q)$(XARGO) build --target $(TARGET) $(VERBOSE) --release
 
 $(BUILDDIR)/$(PACKAGE_NAME).elf: $(BUILDDIR)/$(PACKAGE_NAME)
