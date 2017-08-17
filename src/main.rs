@@ -5,8 +5,13 @@ extern crate alloc;
 extern crate tock;
 
 use alloc::fmt::Write;
+use tock::console::Console;
 
 fn main() {
-    let mut console = tock::console::Console::new();
-    write!(&mut console, "App started\n").unwrap();
+    let mut console = Console::new();
+    for i in 0.. {
+        write!(&mut console, "Starting {}\n", i).unwrap();
+        tock::timer::delay_ms(1000);
+    }
 }
+

@@ -32,7 +32,7 @@ all: $(BUILDDIR)/$(PACKAGE_NAME).tab
 clean:
 	$(Q)$(XARGO) clean $(VERBOSE)
 
-$(BUILDDIR)/$(PACKAGE_NAME):
+$(BUILDDIR)/$(PACKAGE_NAME): src/main.rs
 	$(Q)$(XARGO) build --target $(TARGET) $(VERBOSE) --release
 
 $(BUILDDIR)/$(PACKAGE_NAME).elf: $(BUILDDIR)/$(PACKAGE_NAME)
