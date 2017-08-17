@@ -4,7 +4,7 @@ version = "0.0.0"
 authors = []
 
 [dependencies]
-tock = {path = "../libtock-rs"}
+tock = {git = "https://github.com/helena-project/libtock-rs"}
 
 [profile.dev]
 panic = "abort"
