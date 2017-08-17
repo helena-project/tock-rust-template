@@ -2,7 +2,7 @@
 name = "tock-template"
 version = "0.0.0"
 dependencies = [
- "tock 0.1.0",
+ "tock 0.1.0 (git+https://github.com/helena-project/libtock-rs)",
 ]
 
 [[package]]
@@ -21,6 +21,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "tock"
 version = "0.1.0"
+source = "git+https://github.com/helena-project/libtock-rs#cf0b157db906bc7e1415ce3aff4afd582dd9080a"
 dependencies = [
  "linked_list_allocator 0.4.1 (git+https://github.com/phil-opp/linked-list-allocator)",
 ]
@@ -28,3 +29,4 @@ dependencies = [
 [metadata]
 "checksum linked_list_allocator 0.4.1 (git+https://github.com/phil-opp/linked-list-allocator)" = "<none>"
 "checksum spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)" = "1d16a26e2b789f86aabddbe91cb82ee2e822beb8a59840d631941b625ef77e53"
+"checksum tock 0.1.0 (git+https://github.com/helena-project/libtock-rs)" = "<none>"
