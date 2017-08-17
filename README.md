@@ -8,7 +8,14 @@ First steps:
 
 1. Get a copy of the latest nightly, in this repo's root:
 
+    `rustup upgrade`
     `rustup override set nightly`
+
+    Your rustc should be at least this new:
+    ```
+    $ rustc --version
+    rustc 1.21.0-nightly (7ac979d8c 2017-08-16)
+    ```
 
 2. Need to grab a copy of the rust sources:
 
