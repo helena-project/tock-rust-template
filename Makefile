@@ -36,6 +36,11 @@ all: $(BUILDDIR)/$(PACKAGE_NAME).tab
 clean:
 	$(Q)$(XARGO) clean $(VERBOSE)
 
+.PHONY: debug
+debug:
+	@echo Sorry, relocation-aware debug information is only available for the
+	@echo C runtime presently. Apologies for the misleading kernel message
+
 $(BUILDDIR)/$(PACKAGE_NAME): src/main.rs FORCE_XARGO
 	$(Q)$(XARGO) build --target $(TARGET) $(VERBOSE) --release
 
