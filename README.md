@@ -8,7 +8,9 @@ First steps:
 
 1. Get a copy of the latest nightly, in this repo's root:
 
-    `rustup upgrade`
+    `rustup install nightly`
+    
+    
     `rustup override set nightly`
 
     Your rustc should be at least this new:
