@@ -2,31 +2,29 @@
 name = "tock-template"
 version = "0.0.0"
 dependencies = [
- "tock 0.1.0 (git+https://github.com/helena-project/libtock-rs)",
+ "tock 0.1.0",
 ]
 
 [[package]]
 name = "linked_list_allocator"
-version = "0.4.1"
-source = "git+https://github.com/phil-opp/linked-list-allocator#ce7b045f3154be64053706632ce82ce944945458"
+version = "0.4.2"
+source = "git+https://github.com/phil-opp/linked-list-allocator#7979db9dcb30f7d1212edd16aef4241a0e0fcb40"
 dependencies = [
- "spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "spin 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "spin"
-version = "0.4.5"
+version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "tock"
 version = "0.1.0"
-source = "git+https://github.com/helena-project/libtock-rs#8e2b0df0d8b4bfaf22c16a0778ed3a3c06dd5345"
 dependencies = [
- "linked_list_allocator 0.4.1 (git+https://github.com/phil-opp/linked-list-allocator)",
+ "linked_list_allocator 0.4.2 (git+https://github.com/phil-opp/linked-list-allocator)",
 ]
 
 [metadata]
-"checksum linked_list_allocator 0.4.1 (git+https://github.com/phil-opp/linked-list-allocator)" = "<none>"
-"checksum spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)" = "1d16a26e2b789f86aabddbe91cb82ee2e822beb8a59840d631941b625ef77e53"
-"checksum tock 0.1.0 (git+https://github.com/helena-project/libtock-rs)" = "<none>"
+"checksum linked_list_allocator 0.4.2 (git+https://github.com/phil-opp/linked-list-allocator)" = "<none>"
+"checksum spin 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "7e4deb3c2455c73779e6d3eebceae9599fc70957e54c69fe88f93aa48e62f432"
