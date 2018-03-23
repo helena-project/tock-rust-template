@@ -1,4 +1,11 @@
 # Tock Rust Template
+
+*__NOTICE__: This repository is currenty out of date since the
+Tock kernel's process loading interface has changed and the
+Rust userland library is under active development. Please check
+out [tock/libtock-rs](https://github.com/tock/libtock-rs) for
+now instead. Contributions updating this repo are welcome!*
+
 Template for creating Tock applications in Tock
 
 
